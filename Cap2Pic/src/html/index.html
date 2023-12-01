@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Cap2Pic</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+</head>
+
+<body>
+	<header>
+		<div class="topbar">
+			<img src="../img/logo.png" alt="website-logo" height="70px" />
+			<h2 class="logo">Cap2Pic</h2>
+			<div class="toggle-icon">
+				<div class="social-icon">
+					<a href="https://github.com/ayoitsamishaa" target="_blank">
+						<i class="fa-brands fa-github-square"></i>
+					</a>
+					<a href="" target="_blank">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+                    <a href="bodyPart.html" target="_blank">
+						<i class="fa fa-sign-in" aria-hidden="true"></i>
+					</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;
+				<label for="menuBTN" id="toggleBTN"><i class="fa-solid fa-bars-stagge#e74c3c">&#9776;</i></label>
+			</div>
+		</div>
+		<input type="checkbox" id="menuBTN" />
+		<nav>
+			<ul>
+				<a href="#">
+					<li>Home</li>
+				</a>
+				<a href="chtabot.html">
+					<li>Caption-to-Picture</li>
+				</a>
+				<a href="chtabot.html">
+					<li>Picture-to-Caption</li>
+				</a>
+				<li class="dropdown">
+					<a href="#">Premium Plan <span>&#9662;</span></a>
+					<ul class="dropdown-menu">
+						<!-- <li><a href="allExercises.html">All Exercises</a></li> -->
+						<li><a href="">2x Premium Plan</a></li>
+						<li><a href="">4x Premium Plan</a></li>
+					</ul>
+				</li>
+				<!-- <a href="chtabot.html">
+					<li>ChatBot</li>
+				</a> -->
+				<a href="#contact-sec">
+					<li>Contact</li>
+				</a>
+			</ul>
+		</nav>
+		<div class="banner">
+			<div class="intro">
+				<h1>Unleash Your Story,</h1>
+				<h1>Where Captions</h1>
+				<h1>Meet Creativity...</h1>
+				<form>
+					<a href="#contact-sec" class="btn bg-primary">CONTACT US</a>
+				</form>
+			</div>
+			<img src="../img/logo.png" />
+		</div>
+	</header>
+	<section id="service-sec" class="service-sec">
+		<center>
+			<h2 class="sec-title">OUR SERVICES</h2>
+		</center>
+		<center>
+			<p>Transform Your Life with Our Comprehensive Range of Services.</p>
+		</center>
+		<div class="row">
+			<div class="card" style="background: #fdcb6e">
+				<i class="fa-solid fa-image"></i>
+				<h4>Cap2Pic</h4>
+			</div>
+			<div class="card" style="background: var(--primary-color)">
+				<i class="fa-solid fa-pencil"></i>
+				<h4>Pic2Cap</h4>
+			</div>
+			<div class="card" style="background: #00b894">
+				<i class="fa-solid fa-th"></i>
+				<h4>Plans</h4>
+			</div>
+			<div class="card" style="background: #c47b8d">
+				<i class="fa-solid fa-headset"></i>
+				<h4>Support</h4>
+			</div>
+		</div>
+	</section>
+	<section class="about-sec">
+		<div class="intro">
+			<h1>ABOUT <span>US</span></h1>
+			<p>
+				Welcome to Cap2Pic, crafted by the visionaries at CodeMavens! At Cap2Pic, we're on a mission to transform the way you tell stories through the fusion of captivating captions and striking images. Our platform is designed for those who seek to turn ordinary moments into extraordinary narratives. Powered by innovative technology from CodeMavens, Cap2Pic offers a user-friendly space where your creativity can flourish. Join our community, explore trending captions, and embark on a visual storytelling journey where every image has a story, and every caption paints a picture. Start expressing yourself uniquely with Cap2Pic today.
+			</p>
+		</div>
+		<img src="../img/bg.gif" />
+	</section>
+	<section class="gallery-sec" id="gallery-sec">
+		<div class="card">
+			<h3>Our Gallery</h3>
+			<p>
+				Whether you're a beginner or a seasoned athlete, our site has
+				something for everyone. Join our community and start your journey to a
+				healthier, happier you today!
+			</p>
+			<img src="../img/bodybuilder.png" />
+		</div>
+		<div class="card">
+			<div class="card-img">
+				<img src="../img/1.jpg" />
+			</div>
+			<div class="card-img">
+				<img src="../img/5.jpg" />
+			</div>
+			<div class="card-img">
+				<img src="../img/3.jpg" />
+			</div>
+			<div class="card-img">
+				<img src="../img/4.jpg" />
+			</div>
+		</div>
+	</section>
+	<section class="contact-sec" id="contact-sec">
+		<div>
+			<h1>CONTACT US</h1>
+			<p>Got a technical issue? Want to send A feedback ? Let us know.</p>
+		</div>
+		<form id="my-form" action="your-formspree-link" method="POST">
+			<input type="text" name="name" placeholder="Your Name" />
+			<input type="text" name="contact" placeholder="Your Contact" />
+			<input type="email" name="email" placeholder="Email Address" />
+			<textarea id="message" name="textarea" placeholder="Type Your Message..."></textarea>
+			<button type="submit" class="btn bg-primary">Submit</button>
+		</form>
+	</section>
+	<br /><br /><br /><br /><br />
+	<footer>
+		<h4>&copy; <span>Cap2Pic</span> - all Rights reserved</h4>
+	</footer>
+</body>
+<script type="module" src="../js/validation.js"></script>
+<script type="module" src="../js/chat.js"></script>
+
+</html>

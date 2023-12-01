@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #chat-container {
+            max-width: 1000px;
+            background-color: #6d73cc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #chat-box {
+            height: 400px;
+            width: 1000px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        #user-input {
+            width: 70%;
+            height: 20%;
+            padding: 8px;
+            border-radius: 10px;  
+            margin-right: 10px;
+        }
+
+        #send-button {
+            padding: 8px;
+            cursor: pointer;
+            width: 20%;
+            height: 20%;
+            border-radius: 10px;  
+            margin-right: 10px;
+        } 
+
+        #send-button:hover {
+        background-color: #000000;
+        color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="chat-container">
+    <div id="chat-box"></div>
+    <div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Initial welcome message
+        appendMessage("bot", "Hello! How can I help you today?", "font-weight: 900w, color: pink;");
+    });
+
+
+    function sendMessage() {
+        var userInput = document.getElementById("user-input").value;
+        if (userInput.trim() !== "") {
+            appendMessage("user", userInput);
+            processUserInput(userInput);
+            document.getElementById("user-input").value = "";
+        }
+    }
+
+    function appendMessage(sender, message) {
+        var chatBox = document.getElementById("chat-box");
+        var newMessage = document.createElement("div");
+        newMessage.className = sender;
+        newMessage.textContent = message;
+        chatBox.appendChild(newMessage);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function processUserInput(userInput) {
+        // Basic rule-based responses
+        var response;
+        if (userInput.toLowerCase().includes("hello")) {
+            response = "Hi there! How can I assist you?";
+        } else if (userInput.toLowerCase().includes("how are you")) {
+            response = "I'm just a computer program, but I'm functioning well. Thanks for asking!";
+        } 
+        else if (userInput.toLowerCase().includes("tell me a joke")) {
+            response = "Your life (;";
+        }
+        else {
+            response = "I'm sorry, I didn't understand that. Can you please rephrase?";
+        }
+
+        // Display the bot's response
+        appendMessage("bot", response);
+    }
+</script>
+
+</body>
+</html>
