@@ -35,4 +35,5 @@ An image generating chat bot by caption and vice versa.
    
 ![Screenshot (12)](https://github.com/ayoitsamishaa/Cap2pic/assets/129084275/47185fc1-5797-4b19-ab8d-a414dd7da127)
 
-
+# We are open for contribution.
+Working on integration process!
