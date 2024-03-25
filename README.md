@@ -8,7 +8,7 @@ An image generating chat bot by caption and vice versa.
 
 ![Screenshot (2)](https://github.com/ayoitsamishaa/Cap2pic/assets/129084275/88a73db9-0857-4123-a2a9-51e48747683d)
 
-![Screenshot (3)](https://github.com/ayoitsamishaa/Cap2pic/assets/129084275/d9811cbf-8907-4a7e-98e1-c6c9d8c35109
+![Screenshot (3)](https://github.com/ayoitsamishaa/Cap2pic/assets/129084275/d9811cbf-8907-4a7e-98e1-c6c9d8c35109)
 
 ![Screenshot (13)](https://github.com/ayoitsamishaa/Cap2pic/assets/129084275/ad192e5f-3f24-4f06-a84d-2d1dcdb5ffc5)
 
